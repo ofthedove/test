@@ -22,3 +22,7 @@ Does WaveDrom work in GitHub markdown?
 ],
 }
 ```
+
+References for WaveDrom:
+"Hitchhiker's Guide" (Main tutorial): https://wavedrom.com/tutorial.html
+Piecewise waves (For the AC component): https://observablehq.com/@drom/piecewise
