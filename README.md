@@ -41,3 +41,14 @@ I wonder if svg directly renders, or if it has to be in a separate document...
 
 </svg>
 ```
+
+Does github mermaid support packet(
+```mermaid
+---
+title: "Some Packet or Register"
+---
+packet-beta
+  0-15: "Source Port"
+  16-31: "Destination Port"
+  32-63: "Sequence Number"
+```
