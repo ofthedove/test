@@ -5,10 +5,11 @@ extern "C"
 #include "tiny_time_source.h"
 #include "tiny_timer.h"
 
-#include "tiny_uart.h"
+#include "tiny_stream_uart.h"
 }
 
 tiny_timer_group_t timers;
+tiny_stream_uart_t uart;
 
 // put function declarations here:
 int myFunction(int, int);
@@ -22,7 +23,7 @@ void setup()
    i_tiny_time_source_t *time_source = tiny_time_source_init();
    tiny_timer_group_init(&timers, time_source);
 
-   i_tiny_uart_t *uart = tiny_uart_init(&timers, 9600, 0x06);
+   tiny_stream_uart_init(&uart, &timers, Serial);
    (void)uart;
 }
 
